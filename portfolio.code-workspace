@@ -1,0 +1,15 @@
+{
+  "folders": [
+    {
+      "name": "fboho.github.io",
+      "path": "."
+    },
+    {
+      "name": "_layouts",
+      "path": "../../../.Trash/_layouts"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "fboho.github.io"
+  }
+}

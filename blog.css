@@ -52,16 +52,12 @@ body {
 #name {
   font-size: 110px;
   color: white;
+  padding-bottom: 50px;
 }
 
 #page_body {
   padding-top: 60px;
 }
-
-/* #home_image {
-  position: absolute;
-  width: 50%;
-} */
 
 #right_col {
   padding-left: 200px;
