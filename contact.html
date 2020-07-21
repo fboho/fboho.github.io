@@ -20,7 +20,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="post.css" />
+    <link rel="stylesheet" href="contact.css" />
 
     <title>Fernando Bohorquez Maestre's Porfolio</title>
   </head>
@@ -62,51 +62,18 @@
     </nav>
     <div id="page_body" class="container">
       <div class="row">
-        <div class="col-md-12" style="z-index: 10;">
+        <div class="col-7" style="z-index: 10;">
+          <h1 id="blurb-contact">
+            hello, let’s work together! look forward to hearing from you
+          </h1>
+        </div>
+        <div id="email-blurb" class="col-5">
           <div class="row">
-            <h1 class="head-title">Role Based Access Control</h1>
-            <div class="post-body">
-              <p>
-                Role based access control is a methodology in which all users
-                have a role. That role determines the access users have in a
-                specific web app or service. (Check out ACL)<em> </em>
-              </p>
-
-              <p>
-                We can think of roles as classes where one role can inherit the
-                attributes of others. We can see an example of this everywhere
-                we have a form of tiered access. If we bring to mind a simple
-                blogging web app. We could think of the author as a user with a
-                role, a subscriber as a user with a different role, and a guest
-                as another user with a different role. When each of them visits
-                the site it makes sense for them to see different content.
-                Through role based access control we make this possible.
-              </p>
-
-              <p>Implementation wise we’d see the system working as follows.</p>
-
-              <ol>
-                <li>The client attempts to authenticate</li>
-                <li>
-                  Assuming successful authentication, a web token is generated
-                  and returned with the users’ credentials / roles (signed)
-                </li>
-                <li>
-                  From then on the client adds the token to the authentication
-                  header of each request to the server
-                </li>
-                <li>
-                  The middleware processes the token and makes routing decisions
-                  based on the access the user has
-                </li>
-              </ol>
-
-              <p>
-                The implementation of this traditionally follows the request
-                pipeline where the backend receives the request, middleware
-                handles the request, the backend does something, it returns a
-                response to the client, and finally the frontend re-renders.
-              </p>
+            <div class="col-sm"><h3>email:</h3></div>
+          </div>
+          <div class="row">
+            <div class="col-sm">
+              <h1 id="blurb-contact-email">fernando@cntrl.app</h1>
             </div>
           </div>
         </div>
@@ -142,7 +109,7 @@
     </footer>
 
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Imported JS -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -162,5 +129,7 @@
       src="https://kit.fontawesome.com/307c940293.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Custom JS -->
+    <script src="/js/index.js" crossorigin="anonymous"></script>
   </body>
 </html>

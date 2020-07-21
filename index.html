@@ -23,126 +23,101 @@
 
     <title>Fernando Bohorquez Maestre's Porfolio</title>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">FBM</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-md navbar-dark bg-transparent">
+      <div
+        class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2"
       >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
+            <a class="nav-link" href="/about.html">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/work.html">Work</a>
           </li>
+        </ul>
+      </div>
+      <div class="mx-auto order-0">
+        <a class="navbar-brand mx-auto" href="/index.html">home</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target=".dual-collapse2"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link" href="/blog.html">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Vision</a>
+            <a class="nav-link" href="/contact.html">Contact</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-          <!-- <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link disabled"
-              href="#"
-              tabindex="-1"
-              aria-disabled="true"
-              >Disabled</a
-            >
-          </li> -->
         </ul>
       </div>
     </nav>
     <div id="page_body" class="container">
       <div class="row">
         <div class="col-4" style="z-index: 10;">
-          <h1 id="name">Fernando Bohorquez Maestre</h1>
+          <h1 class="head-title">Fernando Bohorquez Maestre</h1>
         </div>
-        <div class="col-4">
+        <div class="col-4" id="main_image">
           <picture class="center-block">
             <source media="(max-width: 590px)" srcset="/assets/IMG_0134.png" />
             <source
               media="(min-width: 591px)"
               srcset="/assets/IMG_0134@2x.png"
             />
-            <img
-              id="main_image"
-              src="/assets/IMG_0134@2x.png"
-              alt="main_image"
-            />
+            <img src="/assets/IMG_0134@2x.png" alt="main_image" />
           </picture>
         </div>
         <div id="right_col" class="col-4">
           <div class="row">
-            <div class="col-sm"><h3>CLICK TO PLAY</h3></div>
+            <div class="col-sm"><h3 id="play-text">CLICK TO PLAY</h3></div>
           </div>
           <div class="row">
-            <div id="nickname" class="col-sm"><h2>Developer</h2></div>
+            <div id="nickname" class="col-sm">
+              <h1 id="nickname-text">Developer</h1>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div id="footer" class="container">
-      <div class="row">
-        <div class="col-sm">
-          <a class="navbar-brand" href="https://github.com/fboho">Github</a>
+    <footer class="footer mt-auto">
+      <div id="footer" class="container">
+        <div class="row">
+          <div class="col-sm">
+            <a class="navbar-brand" href="https://github.com/fboho">Github</a>
+          </div>
+          <div class="col-sm">
+            <a
+              class="navbar-brand"
+              href="https://www.linkedin.com/in/fernando-bohorquez-067534102/"
+              >LinkedIn</a
+            >
+          </div>
+          <div class="col-sm">
+            <a
+              class="navbar-brand"
+              href="https://medium.com/fernando-bohorquez-maestre"
+              >Medium</a
+            >
+          </div>
+          <div class="col-sm">
+            <a class="navbar-brand" href="/assets/Resume-Fernando-Bohorquez.pdf"
+              >Resume</a
+            >
+          </div>
         </div>
-        <div class="col-sm">
-          <a
-            class="navbar-brand"
-            href="https://www.linkedin.com/in/fernando-bohorquez-067534102/"
-            >LinkedIn</a
-          >
-        </div>
-        <div class="col-sm">
-          <a
-            class="navbar-brand"
-            href="https://medium.com/fernando-bohorquez-maestre"
-            >Medium</a
-          >
-        </div>
-        <div class="col-sm"><a class="navbar-brand" href="#">Resume</a></div>
       </div>
-    </div>
+    </footer>
 
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Imported JS -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -162,5 +137,7 @@
       src="https://kit.fontawesome.com/307c940293.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Custom JS -->
+    <script src="/js/index.js" crossorigin="anonymous"></script>
   </body>
 </html>

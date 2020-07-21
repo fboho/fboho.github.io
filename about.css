@@ -1,0 +1,15 @@
+#blurb-div {
+  position: absolute;
+  bottom: 100px;
+  font-size: 16px;
+}
+
+#foot-content {
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+#foot-content-last {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}

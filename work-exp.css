@@ -1,0 +1,22 @@
+.company-name {
+  font-size: 180px;
+  color: white;
+  text-emphasis: none;
+  z-index: 1;
+}
+.work-title {
+  font-size: 30px;
+  margin-top: 40px;
+}
+.work-blurb {
+  font-size: 16px;
+  margin-top: 40px;
+}
+.feather-arrow {
+  height: 45px;
+  width: 45px;
+  color: white;
+}
+.feather-arrow:hover {
+  color: #871f23;
+}

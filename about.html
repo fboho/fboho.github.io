@@ -20,7 +20,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="post.css" />
+    <link rel="stylesheet" href="about.css" />
 
     <title>Fernando Bohorquez Maestre's Porfolio</title>
   </head>
@@ -60,56 +60,58 @@
         </ul>
       </div>
     </nav>
-    <div id="page_body" class="container">
+    <div id="page_body" class="container-fluid">
       <div class="row">
-        <div class="col-md-12" style="z-index: 10;">
-          <div class="row">
-            <h1 class="head-title">Role Based Access Control</h1>
-            <div class="post-body">
-              <p>
-                Role based access control is a methodology in which all users
-                have a role. That role determines the access users have in a
-                specific web app or service. (Check out ACL)<em> </em>
-              </p>
-
-              <p>
-                We can think of roles as classes where one role can inherit the
-                attributes of others. We can see an example of this everywhere
-                we have a form of tiered access. If we bring to mind a simple
-                blogging web app. We could think of the author as a user with a
-                role, a subscriber as a user with a different role, and a guest
-                as another user with a different role. When each of them visits
-                the site it makes sense for them to see different content.
-                Through role based access control we make this possible.
-              </p>
-
-              <p>Implementation wise we’d see the system working as follows.</p>
-
-              <ol>
-                <li>The client attempts to authenticate</li>
-                <li>
-                  Assuming successful authentication, a web token is generated
-                  and returned with the users’ credentials / roles (signed)
-                </li>
-                <li>
-                  From then on the client adds the token to the authentication
-                  header of each request to the server
-                </li>
-                <li>
-                  The middleware processes the token and makes routing decisions
-                  based on the access the user has
-                </li>
-              </ol>
-
-              <p>
-                The implementation of this traditionally follows the request
-                pipeline where the backend receives the request, middleware
-                handles the request, the backend does something, it returns a
-                response to the client, and finally the frontend re-renders.
-              </p>
-            </div>
+        <div class="col-6">
+          <div class="about-image-container">
+            <img
+              src="/assets/about.svg"
+              alt="triangle with all three sides equal"
+              height="700"
+              width="700"
+              id="about-image"
+            />
           </div>
         </div>
+        <div class="col-6">
+          <div id="blurb-div">
+            <h2 class="head-title">hello!</h2>
+            <p>
+              I am a social impact entrepreneur with a computer science
+              background. Technically I focus on web development and machine
+              learning. Business wise I have experience in early stage
+              pre-funding startups. I have experience with UX / UI design. I
+              just recently graduated from the University of Michigan in April
+              2020.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center" id="foot-content">
+        <h2>ready to contact me yet?</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div
+          class="tenor-gif-embed"
+          data-postid="17077193"
+          data-share-method="host"
+          data-width="30%"
+          data-aspect-ratio="1.0"
+        >
+          <a
+            href="https://tenor.com/view/waiting-bored-boring-wait-fingers-gif-17077193"
+            >Waiting Bored GIF</a
+          >
+          from <a href="https://tenor.com/search/waiting-gifs">Waiting GIFs</a>
+        </div>
+        <script
+          type="text/javascript"
+          async
+          src="https://tenor.com/embed.js"
+        ></script>
+      </div>
+      <div class="row justify-content-center">
+        <a class="nav-link" href="/contact.html">Contact Me</a>
       </div>
     </div>
     <footer class="footer mt-auto">

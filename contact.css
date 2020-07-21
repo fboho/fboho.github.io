@@ -1,0 +1,24 @@
+#blurb-contact {
+  font-size: 80px;
+  color: white;
+}
+
+#foot-content {
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+#foot-content-last {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+#blurb-contact-email {
+  font-size: 40px;
+}
+#email-blurb {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
