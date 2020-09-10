@@ -25,7 +25,11 @@
     <title>Fernando Bohorquez Maestre's Porfolio</title>
   </head>
   <body class="d-flex flex-column min-vh-100">
-    <nav class="navbar navbar-expand-md navbar-dark bg-transparent">
+    <div class="loading-container">
+      <div class="loading-screen">
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-transparent main-navigation">
       <div
         class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2"
       >
@@ -60,22 +64,21 @@
         </ul>
       </div>
     </nav>
-    <div id="page_body" class="container-fluid">
-      <div class="row">
-        <div class="col-6">
+    <div id="page_body" class="container-fluid" data-barba="wrapper">
+      <div class="row" data-barba="container" data-barba-namespace="about">
+        <div class="col-md">
           <div class="about-image-container">
             <img
               src="/assets/about.svg"
               alt="triangle with all three sides equal"
-              height="700"
-              width="700"
+              class="img-fluid"
               id="about-image"
             />
           </div>
         </div>
-        <div class="col-6">
-          <div id="blurb-div">
-            <h2 class="head-title">hello!</h2>
+        <div class="col-md text-center">
+          <div id="blurb-div" class="is-animated">
+            <h2 class="head-title green-heading-bg text-center" >hello!</h2>
             <p>
               I am a social impact entrepreneur with a computer science
               background. Technically I focus on web development and machine
@@ -85,61 +88,28 @@
               2020.
             </p>
           </div>
+          <div id="blurb-div" class="is-animated">
+            <a href="/contact.html" class="btn-3d cyan">Contact me</a>
+          </div>
         </div>
-      </div>
-      <div class="row justify-content-center" id="foot-content">
-        <h2>ready to contact me yet?</h2>
-      </div>
-      <div class="row justify-content-center">
-        <div
-          class="tenor-gif-embed"
-          data-postid="17077193"
-          data-share-method="host"
-          data-width="30%"
-          data-aspect-ratio="1.0"
-        >
-          <a
-            href="https://tenor.com/view/waiting-bored-boring-wait-fingers-gif-17077193"
-            >Waiting Bored GIF</a
-          >
-          from <a href="https://tenor.com/search/waiting-gifs">Waiting GIFs</a>
-        </div>
-        <script
-          type="text/javascript"
-          async
-          src="https://tenor.com/embed.js"
-        ></script>
-      </div>
-      <div class="row justify-content-center">
-        <a class="nav-link" href="/contact.html">Contact Me</a>
       </div>
     </div>
     <footer class="footer mt-auto">
-      <div id="footer" class="container">
-        <div class="row">
-          <div class="col-sm">
-            <a class="navbar-brand" href="https://github.com/fboho">Github</a>
-          </div>
-          <div class="col-sm">
-            <a
-              class="navbar-brand"
-              href="https://www.linkedin.com/in/fernando-bohorquez-067534102/"
-              >LinkedIn</a
-            >
-          </div>
-          <div class="col-sm">
-            <a
-              class="navbar-brand"
-              href="https://medium.com/fernando-bohorquez-maestre"
-              >Medium</a
-            >
-          </div>
-          <div class="col-sm">
-            <a class="navbar-brand" href="/assets/Resume-Fernando-Bohorquez.pdf"
-              >Resume</a
-            >
-          </div>
-        </div>
+      <div id="footer" class="container-flex">
+        <a class="navbar-brand" href="https://github.com/fboho">Github</a>
+        <a
+          class="navbar-brand"
+          href="https://www.linkedin.com/in/fernando-bohorquez-067534102/"
+          >LinkedIn</a
+        >
+        <a
+          class="navbar-brand"
+          href="https://medium.com/fernando-bohorquez-maestre"
+          >Medium</a
+        >
+        <a class="navbar-brand" href="/assets/Resume-Fernando-Bohorquez.pdf"
+          >Resume</a
+        >
       </div>
     </footer>
 
@@ -164,5 +134,9 @@
       src="https://kit.fontawesome.com/307c940293.js"
       crossorigin="anonymous"
     ></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="/transition.js" crossorigin="anonymous"></script>
+    <script src="helper.js"></script> -->
   </body>
 </html>

@@ -4,3 +4,7 @@
   text-emphasis: none;
   z-index: 1;
 }
+
+.work-row{
+  flex-direction: column;
+}

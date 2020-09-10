@@ -57,11 +57,12 @@ body {
   font-size: 15px; /* what does this mean */
   /* add color below*/
   line-height: 1.5;
-  background-color: #efd1bc;
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
 }
 
 .head-title {
-  font-size: 110px;
+  font-size: 9vw;
+  text-align: left;
   color: white;
 }
 
@@ -73,22 +74,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 0;
+  z-index: 1;
 }
 
 #right_col {
   padding-left: 200px;
 }
 
-#footer {
-  padding-bottom: 10px;
-  padding-left: 200px;
-}
-
 #nickname {
   position: absolute;
+  text-align: center;
   bottom: 40px;
-  font-size: 30px;
+  font-size: 4vw;
 }
 
 #nickname-text {
@@ -127,3 +124,10 @@ a.navbar-brand:hover {
 /* .nav-link:hover {
   font-weight: bold;
 } */
+
+.container-flex{
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  justify-content: space-around;
+}
