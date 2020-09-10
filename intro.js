@@ -1,6 +1,8 @@
+setTimeout(function(){ window.location.href = 'main.html'; }, 13000);
+
 var data = [
     {
-      AboutDevTypeText: "<span>Launching Portfolio.exe...<br/><br/>Hello, my name is Fernando Bohorquez and I'm a software developer building towards a better world. Do you want to learn more?</span><br/><br/><span><br/> Y / N</span><br/>"
+      AboutDevTypeText: "<span>Launching Portfolio.exe...<br/>Click anywhere to skip.<br/><br/>Hello, my name is Fernando Bohorquez and I'm a software developer building towards a better world. Do you want to learn more?</span><br/><br/><span><br/> Y / N</span><br/>"
     }
   ];
   
@@ -23,6 +25,12 @@ var data = [
       if (isTag) return type();
       setTimeout(type, 80);
     })();
+  }
+
+  document.onclick = inputChange;
+
+  function inputChange(e) {
+    window.location.href = 'main.html'
   }
   
   document.addEventListener('keydown', function(event) {
